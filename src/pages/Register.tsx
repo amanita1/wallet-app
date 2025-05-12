@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { login } from '../redux/slice/authSlice'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { type RootState } from '../redux/store'
 import ThemeToggle from '../components/ThemeToggle'
 
@@ -92,6 +92,16 @@ export default function Register() {
                             Зарегистрироваться
                         </button>
                     </form>
+
+                    <p className="text-sm text-center text-gray-600 dark:text-gray-400">
+                        Уже есть аккаунт?{' '}
+                        <Link
+                            to="/login"
+                            className="text-purple-600 dark:text-purple-400 hover:underline font-medium"
+                        >
+                            Войти
+                        </Link>
+                    </p>
                 </div>
             </div>
         </>

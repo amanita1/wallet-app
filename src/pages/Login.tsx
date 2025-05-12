@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { login } from '../redux/slice/authSlice'
-import { useNavigate } from 'react-router-dom'
-import type {RootState} from '../redux/store'
+import { useNavigate, Link } from 'react-router-dom'
+import { type RootState } from '../redux/store'
 import ThemeToggle from '../components/ThemeToggle'
 
 export default function Login() {
@@ -77,6 +77,16 @@ export default function Login() {
                             Войти
                         </button>
                     </form>
+
+                    <p className="text-sm text-center text-gray-600 dark:text-gray-400">
+                        Нет аккаунта?{' '}
+                        <Link
+                            to="/register"
+                            className="text-indigo-600 dark:text-indigo-400 hover:underline font-medium"
+                        >
+                            Зарегистрируйся
+                        </Link>
+                    </p>
                 </div>
             </div>
         </>
