@@ -1,6 +1,6 @@
 # 💸 Онлайн-кошелёк | React + Redux + Tailwind
 
-> Cделано с 💙 и Tailwind’ом от великого и любимого **Александра Рахметова**
+> Cделано с 💙 и Tailwind’ом от **Александра Рахметова**
 
 [![Deploy Status](https://img.shields.io/github/deployments/amanita1/wallet-app/github-pages?label=deploy&style=for-the-badge)](https://amanita1.github.io/wallet-app/)
 [![Made by Amanita1](https://img.shields.io/badge/made%20by-amanita1-8a2be2?style=for-the-badge&logo=react)](https://github.com/amanita1)
