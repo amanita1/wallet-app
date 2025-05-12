@@ -8,6 +8,10 @@ import TransactionList from '../components/TransactionList'
 import BalanceCard from '../components/BalanceCard'
 import CategoryStatsChart from '../components/CategoryStatsChart'
 import DateFilteredBarChart from '../components/DateFilteredBarChart'
+import SavingGoalProgress from '../components/SavingGoalProgress'
+import DailyLimitCard from '../components/DailyLimitCard'
+import RecurringSubscriptionsCard from '../components/RecurringSubscriptionsCard'
+import ExportToPDFButton from '../components/ExportToPDFButton'
 
 
 
@@ -27,7 +31,7 @@ export default function Dashboard() {
     return (
         <>
             <ThemeToggle />
-            <div className="min-h-screen bg-gradient-to-br from-green-200 to-teal-400 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-white px-4 py-10">
+            <div className="animate-fadeInUp min-h-screen bg-gradient-to-br from-green-200 to-teal-400 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-white px-4 py-10">
                 <div className="max-w-4xl mx-auto bg-white dark:bg-gray-900 rounded-2xl shadow-xl p-6 md:p-10 backdrop-blur-md bg-opacity-70 dark:bg-opacity-80">
                     <div className="flex items-center justify-between">
                         <h1 className="text-3xl font-bold">
@@ -36,14 +40,14 @@ export default function Dashboard() {
 
                         <button
                             onClick={() => navigate('/settings')}
-                            className="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white rounded-xl hover:bg-gray-300 dark:hover:bg-gray-600 transition text-sm"
+                            className="hover:scale-105 active:scale-95 transition duration-200 px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white rounded-xl hover:bg-gray-300 dark:hover:bg-gray-600 transition text-sm"
                         >
                             Настройки
                         </button>
 
                         <button
                             onClick={handleLogout}
-                            className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-xl text-sm font-semibold transition"
+                            className="hover:scale-105 active:scale-95 transition duration-200 px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-xl text-sm font-semibold transition"
                         >
                             Выйти
                         </button>
@@ -54,6 +58,10 @@ export default function Dashboard() {
                         Это твой Dashboard — здесь будут транзакции, баланс, подписки, графики и всё, что связано с деньгами 💰
                     </p>
                     <BalanceCard />
+                    <DailyLimitCard />
+                    <RecurringSubscriptionsCard />
+                    <SavingGoalProgress />
+
                     <div className="mt-10">
                         <AddTransactionForm />
                     </div>
@@ -62,6 +70,7 @@ export default function Dashboard() {
                     </div>
                     <CategoryStatsChart />
                     <DateFilteredBarChart />
+                    <ExportToPDFButton />
 
                 </div>
             </div>

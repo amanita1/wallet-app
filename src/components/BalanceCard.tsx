@@ -15,7 +15,7 @@ export default function BalanceCard() {
     const balance = income - expense
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
+        <div className="animate-fadeInUp grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
             <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border dark:border-gray-700">
                 <h2 className="text-sm text-gray-500">Доходы</h2>
                 <p className="text-2xl font-bold text-green-600 dark:text-green-400">+₸ {income.toFixed(2)}</p>

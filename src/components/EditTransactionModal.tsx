@@ -84,13 +84,13 @@ export default function EditTransactionModal({
                         <button
                             type="button"
                             onClick={onClose}
-                            className="w-1/2 py-2 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-white rounded-xl hover:bg-gray-400 dark:hover:bg-gray-600"
+                            className="hover:scale-105 active:scale-95 transition duration-200 w-1/2 py-2 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-white rounded-xl hover:bg-gray-400 dark:hover:bg-gray-600"
                         >
                             Отмена
                         </button>
                         <button
                             type="submit"
-                            className="w-1/2 py-2 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 font-semibold"
+                            className="hover:scale-105 active:scale-95 transition duration-200 w-1/2 py-2 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 font-semibold"
                         >
                             Сохранить
                         </button>

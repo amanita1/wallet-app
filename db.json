@@ -1,0 +1,28 @@
+{
+  "transactions": [
+    {
+      "id": 1747088570718,
+      "type": "income",
+      "amount": 50000,
+      "category": "зп",
+      "date": "2025-05-12",
+      "comment": "премия"
+    },
+    {
+      "id": 1747088579006,
+      "type": "income",
+      "amount": 50000,
+      "category": "зп",
+      "date": "2025-05-12",
+      "comment": "премия"
+    },
+    {
+      "id": 1747088580527,
+      "type": "income",
+      "amount": 50000,
+      "category": "зп",
+      "date": "2025-05-12",
+      "comment": "премия"
+    }
+  ]
+}

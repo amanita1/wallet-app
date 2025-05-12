@@ -41,7 +41,7 @@ export default function Register() {
     return (
         <>
             <ThemeToggle />
-            <div className="min-h-screen flex items-center justify-center px-4 bg-gradient-to-br from-pink-200 to-purple-400 dark:from-gray-900 dark:to-gray-800">
+            <div className="animate-fadeInUp min-h-screen flex items-center justify-center px-4 bg-gradient-to-br from-pink-200 to-purple-400 dark:from-gray-900 dark:to-gray-800">
                 <div className="w-full max-w-md bg-white dark:bg-gray-900 rounded-2xl shadow-xl p-8 space-y-6">
                     <h2 className="text-3xl font-bold text-center text-gray-800 dark:text-white">Регистрация</h2>
 
@@ -87,7 +87,7 @@ export default function Register() {
 
                         <button
                             type="submit"
-                            className="w-full py-2 bg-purple-600 text-white rounded-xl hover:bg-purple-700 font-semibold"
+                            className="hover:scale-105 active:scale-95 transition duration-200 w-full py-2 bg-purple-600 text-white rounded-xl hover:bg-purple-700 font-semibold"
                         >
                             Зарегистрироваться
                         </button>

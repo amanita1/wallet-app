@@ -34,8 +34,8 @@ export default function AddTransactionForm() {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="space-y-4 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
-            <div className="flex gap-4">
+        <form onSubmit={handleSubmit} className="animate-fadeInUp space-y-4 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
+            <div className="flex gap-4 ">
                 <label className="flex items-center gap-1">
                     <input type="radio" name="type" value="income" checked={type === 'income'} onChange={() => setType('income')} />
                     Доход
@@ -78,7 +78,7 @@ export default function AddTransactionForm() {
 
             <button
                 type="submit"
-                className="w-full py-2 bg-teal-600 text-white rounded-xl hover:bg-teal-700 transition font-semibold"
+                className="hover:scale-105 active:scale-95 transition duration-200 w-full py-2 bg-teal-600 text-white rounded-xl hover:bg-teal-700 transition font-semibold"
             >
                 Добавить транзакцию
             </button>

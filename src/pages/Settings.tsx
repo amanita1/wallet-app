@@ -33,7 +33,7 @@ export default function Settings() {
     return (
         <>
             <ThemeToggle />
-            <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-300 dark:from-gray-900 dark:to-gray-800 px-4">
+            <div className="animate-fadeInUp min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-300 dark:from-gray-900 dark:to-gray-800 px-4">
                 <div className="w-full max-w-lg bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-xl backdrop-blur-sm bg-opacity-70 dark:bg-opacity-80">
                     <h2 className="text-3xl font-bold text-center text-gray-800 dark:text-white mb-6">Настройки профиля</h2>
 
@@ -116,10 +116,9 @@ export default function Settings() {
 
                         </div>
 
-                        {/*TODO: Можно добавить форму смены имени, пароля, аватара и т.п. */}
                         <button
                             onClick={() => navigate('/dashboard')}
-                            className="mb-6 px-4 py-2 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-white rounded-xl hover:bg-gray-400 dark:hover:bg-gray-600 transition text-sm"
+                            className="hover:scale-105 active:scale-95 transition duration-200 mb-6 px-4 py-2 bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-white rounded-xl hover:bg-gray-400 dark:hover:bg-gray-600 transition text-sm"
                         >
                             ← Назад в дэшборд
                         </button>
